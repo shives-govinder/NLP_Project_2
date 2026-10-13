@@ -1,0 +1,113 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1 Data prep",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.data_prep",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "2 Modern corpus",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.modern_data",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "3a Normaliser: gold candidates",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.normalise",
+      "args": [
+        "candidates"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "3b Normaliser: tune",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.normalise",
+      "args": [
+        "tune"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "3c Normaliser: apply",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.normalise",
+      "args": [
+        "apply"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "EDA",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.eda",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "E1 Tokeniser cost",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.e1_tokeniser_cost",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "E2 Pseudo-perplexity (smoke test, 20 segs)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.e2_pseudo_perplexity",
+      "args": [
+        "--limit",
+        "20"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "E3 Language ID",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.e3_language_id",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "E4 Attribution (stretch)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.e4_attribution",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Figures + tables",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "nlp2.plots",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

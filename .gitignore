@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Data and generated outputs (regenerate with the README steps)
+data/
+*.zip
+outputs/processed/*
+outputs/results/*
+outputs/figures/*
+!outputs/**/.gitkeep
+# Final figures for the paper can be force-added: git add -f outputs/figures/fig1_tokeniser_and_pppl.png

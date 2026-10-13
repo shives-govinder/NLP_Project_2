@@ -1,0 +1,12 @@
+[project]
+name = "nlp2"
+version = "0.1.0"
+description = "COMS4054A NLP Project 2: modern NLP tools vs historical isiXhosa"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
